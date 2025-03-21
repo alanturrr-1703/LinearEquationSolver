@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.regex.*;
 
 class LinearEquation {
-    private Map<String, Double> coefficients;
+    private final Map<String, Double> coefficients;
     private double constant;
 
     public LinearEquation(String equation, Set<String> variableSet) {

@@ -1,9 +1,9 @@
 import java.util.*;
 
 class CoefficientMatrix {
-    private double[][] matrix;
-    private double[] constants;
-    private List<String> variables;
+    private final double[][] matrix;
+    private final double[] constants;
+    private final List<String> variables;
 
     public CoefficientMatrix(List<LinearEquation> equations, Set<String> variableSet) {
         int numEquations = equations.size();

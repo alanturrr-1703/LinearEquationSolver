@@ -1,7 +1,7 @@
 class Solver {
-    private double[][] matrix;  // Coefficient matrix
-    private double[] constants; // Right-hand side values
-    private int size;           // Number of equations/variables
+    private final double[][] matrix;  // Coefficient matrix
+    private final double[] constants; // Right-hand side values
+    private final int size;           // Number of equations/variables
 
     public Solver(CoefficientMatrix coefficientMatrix) {
         this.matrix = coefficientMatrix.getMatrix();
