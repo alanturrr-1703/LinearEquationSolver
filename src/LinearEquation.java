@@ -2,8 +2,8 @@ import java.util.*;
 import java.util.regex.*;
 
 class LinearEquation {
-    private Map<String, Double> coefficients; // Variable -> Coefficient
-    private double constant; // Right-hand side constant
+    private Map<String, Double> coefficients;
+    private double constant;
 
     public LinearEquation(String equation, Set<String> variableSet) {
         coefficients = new HashMap<>();
@@ -34,7 +34,7 @@ class LinearEquation {
                             Double.parseDouble(coeffStr);
 
             coefficients.put(variable, coefficient);
-            variableSet.add(variable); // Store all encountered variable names
+            variableSet.add(variable);
         }
     }
 
